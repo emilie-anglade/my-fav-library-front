@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.home-container button {
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: aqua;
+}
+
+.home-container button:hover {
+  padding: 1.2rem;
+}
