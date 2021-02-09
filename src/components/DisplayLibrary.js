@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import './DisplayLibrary.css';
+import BookComponent from './BookComponent';
 
 const DisplayLibrary = () => {
   
@@ -16,24 +17,21 @@ const DisplayLibrary = () => {
     };
     fetchData();
   }, []);
-  
-  console.log('data:', data);
-  
+    
   return(
     
     <div className="library-container">
       <h1>Ma bibliothèque</h1>
       <div className="books-list-container">
         {data.map(item => (
-        <div key={item.idbooks} className="book-container">
-          <img src={item.image} alt={item.title} />
-          <div className="book-info-container">
-            <h2>{item.title}</h2>
-            <p>{item.summary}</p>
-          </div>
-        </div>
-      )
-      )}
+        <BookComponent
+          key={item.idbooks}
+          title={item.title} 
+          image={item.image} 
+          author={item.author}
+          summary={item.summary}
+        />
+      ))}
       </div>
     </div>
   );

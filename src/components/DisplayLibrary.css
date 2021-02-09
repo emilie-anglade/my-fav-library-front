@@ -28,7 +28,15 @@
 
 .book-container h2 {
   font-family: "Dancing Script", cursive;
+  margin-bottom: 0;
 }
+
+.book-container h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: rgb(53, 50, 50);
+}
+
 .book-container img {
   width: 200px;
   height: 200px;
